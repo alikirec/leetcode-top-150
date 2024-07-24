@@ -4,7 +4,6 @@ from typing import List
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
         points.sort(key=lambda p: p[0])
-        print(points)
         n = 1
         curr_intersection = points[0]
         for point in points[1:]:
